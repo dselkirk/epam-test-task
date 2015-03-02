@@ -36,6 +36,97 @@ $(function () {
 		// Write the data into our global variable.
 		//books = data;
 
+			books = [
+  {
+    "id": 1,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  },
+  {
+   "id": 8,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "year": 2013,    
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/images/eloquent_js.png",
+      "large": "assets/images/eloquent_js_large.png"
+    }
+  }
+]
+
 		// Call a function to create HTML for all the books.
 		generateAllbooksHTML(books);
 
@@ -182,99 +273,10 @@ $(function () {
 	}
 
 	// Get the filters object, turn it into a string and write it into the hash.
-	function createQueryHash(filters){
+	function createQueryHash(){
 		window.location.hash = '#';
 	}
 
-	books = [
-  {
-    "id": 1,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 2,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 3,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 4,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 5,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 6,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-    "id": 7,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  },
-  {
-   "id": 8,
-    "title": "Sony Xperia Z3",
-    "author": "Test Title",
-    "year": 2003,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/sony-xperia-z3.jpg",
-      "large": "assets/images/sony-xperia-z3-large.jpg"
-    }
-  }
-];
+
 
 });
