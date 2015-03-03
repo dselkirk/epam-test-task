@@ -26,110 +26,20 @@ $(function () {
 	// Вызывается при рендеринге страницы
 
 	// Получаем данные из books.json.
-	//$.getJSON( "books.json", function( data ) {
+	$.getJSON( "books.json", function( data ) {
 
 		// Записываем в переменную
-		//books = data;
-
-			books = [
-  {
-    "id": 1,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 2,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 3,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 4,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 5,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 6,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-    "id": 7,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  },
-  {
-   "id": 8,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  }
-]
+		books = data;
+		
 		// Вызываем метод для генерации всех книг
 		generateAllbooksHTML(books);
 
 		// Вручную вызываем событие hashchange, чтобы начать приложение
 		$(window).trigger('hashchange');
-	//});
+	});
 
 
-	// При каждом изменении hashm вызываем данный метод
+	// При каждом изменении hash вызываем данный метод
 	$(window).on('hashchange', function(){
 		render(window.location.hash);
 	});
@@ -144,7 +54,6 @@ $(function () {
 
 		// Скрываем все
 		$('.main-content .page').removeClass('visible');
-
 
 		var	map = {
 
