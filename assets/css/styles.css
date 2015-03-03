@@ -236,18 +236,18 @@ header a {
 
 @media (max-width: 800px) {
 
+	.book {
+		min-width: 300px;
+	}
+	
 	.books-list {
 		margin-left: 0;
 	}
 
 	.books-list .book-photo{
-		width: 225px;
+		width: 125px;
 	}
-
-	.books-list .book-description{
-		max-width: 225px;
-	}
-
+	
 	.books-list > li{	
 		width: 80%;
 	}
@@ -311,7 +311,7 @@ header a {
 }
 
 .preview-large .book-header{
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .preview-large .book-photo {
@@ -340,8 +340,8 @@ header a {
 
 .close{
 	position: absolute;
-	right: 25px;
-	top: 15px;
+	right: 5px;
+	top: 5px;
 
 	font-size: 28px;
 	color: #555;
