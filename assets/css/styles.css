@@ -96,72 +96,16 @@ header h2.tzine a{
 
 
 /*-------------------
-	All Products Page
+	All Books Page
 --------------------*/
 
-/*	Filter Form	*/
+/*	Books List	*/
 
-.filters{
-	box-sizing: border-box;
-	padding: 5px 30px 30px;
-	width: 190px;
-	background-color: #FFF;
-	border: 1px solid #DBE3E7;
-	border-radius: 3px;
-	box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
-	position: fixed;
-	text-align: left;
-	color: #2B2E31;
-	opacity: 0;
-	pointer-events: none;
-}
-
-.filters .filter-criteria{
-	display: block;
-	margin: 10px 0 10px;
-}
-
-.filters span{
-	font-size:14px;
-	display: block;
-	margin-bottom: 12px;
-	font-weight: bold;
-	margin-top: 20px;
-}
-
-.filters label{
-	display: block;
-	line-height: 1.4;
-	font-size: 15px;
-}
-
-.filters label input{
-	margin-right: 10px;
-}
-
-.filters button{
-	border-radius: 2px;
-	background-color:  #4BC34B;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-	border: 0;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 13px;
-	cursor: pointer;
-
-	width: 95px;
-	height: 32px;
-	margin-top: 10px;
-}
-
-
-/*	Products List	*/
-
-.all-products h3{
+.all-books h3{
 	opacity: 0;
 }
 
-.products-list{
+.books-list{
 	list-style:none;
 	margin-left:225px;
 	max-width: 1500px;
@@ -171,15 +115,15 @@ header h2.tzine a{
 	font-size: 0;
 }
 
-.all-products.visible .products-list,
-.all-products.visible .filters,
-.all-products.visible h3{
+.all-books.visible .books-list,
+.all-books.visible .filters,
+.all-books.visible h3{
 	opacity: 1;
 	transition: 1s;
 	pointer-events: auto;
 }
 
-.products-list > li{
+.books-list > li{
 	box-sizing:border-box;
 	display: inline-block;
 	cursor: pointer;
@@ -198,14 +142,14 @@ header h2.tzine a{
 	padding: 25px;
 }
 
-.products-list > li.hidden{
+.books-list > li.hidden{
 	opacity: 0.2;
 	pointer-events: none;
 }
 
-/* The product image */
+/* The book image */
 
-.products-list .product-photo{
+.books-list .book-photo{
 	display: block;
 	text-align: center;
 	box-shadow : 0 0 20px 8px #f3f3f3 inset;
@@ -216,9 +160,9 @@ header h2.tzine a{
 	box-sizing: border-box;
 }
 
-/* The product name */
+/* The book name */
 
-.products-list h2{
+.books-list h2{
 	display: block;
 	font-size: 18px;
 	white-space: nowrap;
@@ -228,14 +172,14 @@ header h2.tzine a{
 	margin:0;
 }
 
-.products-list h2 a{
+.books-list h2 a{
 	text-decoration: none;
 	color: #2B2E31;
 }
 
-/* Product description */
+/* book description */
 
-.products-list .product-description{
+.books-list .book-description{
 	margin-top: 20px;
 
 	color: #5d5d5d;
@@ -249,47 +193,22 @@ header h2.tzine a{
 	list-style: none;
 }
 
-.products-list .product-description li{
+.books-list .book-description li{
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.products-list .product-description li:first-child{
+.books-list .book-description li:first-child{
 	display: block;
 }
 
-.products-list .product-description li span{
+.books-list .book-description li span{
 	font-weight: bold;
 }
 
 /* Price and order button */
 
-.products-list button{
-	border-radius: 2px;
-	background-color:  #87bae1;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-	border: 0;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 13px;
-	cursor: pointer;
-
-	width: 95px;
-	height: 32px;
-}
-
-.products-list .product-price{
-	float: right;
-
-	color:  #4e4e4e;
-	font-weight: bold;
-	font-size: 20px;
-
-	padding-top: 6px;
-	margin: 0;
-}
-
-.products-list .highlight{
+.books-list .highlight{
 	position: absolute;
 	top:0;
 	left:0;
@@ -300,7 +219,7 @@ header h2.tzine a{
 	transition: 0.4s;
 }
 
-.products-list > li:hover .highlight{
+.books-list > li:hover .highlight{
 	opacity: 1;
 }
 
@@ -308,21 +227,21 @@ header h2.tzine a{
 
 @media (max-width: 800px){
 
-	.products-list .product-photo{
+	.books-list .book-photo{
 		width: 225px;
 	}
 
-	.products-list .product-description{
+	.books-list .book-description{
 		max-width: 225px;
 	}
 }
 
 
 /*---------------------------
-	Single Product Page
+	Single book Page
 ----------------------------*/
 
-.single-product{
+.single-book{
 	z-index: 100;
 }
 
@@ -337,7 +256,7 @@ header h2.tzine a{
 	z-index: 100;
 }
 
-.single-product.visible .overlay{
+.single-book.visible .overlay{
 	height: 100%;
 }
 
@@ -361,7 +280,7 @@ header h2.tzine a{
 
 }
 
-.single-product.visible .preview-large{
+.single-book.visible .preview-large{
 	opacity: 1;
 	transition: 1.4s;
 	pointer-events: auto;

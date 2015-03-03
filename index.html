@@ -14,7 +14,7 @@
 <body>
 
 	<header class="compact">
-		<h1><a href="#">Epam Test Task</a></h1>
+		<h1><a href="#">Моя библиотека</a></h1>
 	</header>
 
 	<div class="main-content">
@@ -24,7 +24,7 @@
 			<ul class="books-list">
 				<script id="books-template" type="x-handlebars-template">​
 					{{#each this}}
-						<li data-index="{{id}}">
+						<li data-index="{{id}}" class="book">
 							<a href="#" class="book-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
 							<h2><a href="#"> {{title}} </a></h2>
 							<p class="book-author">{{author}}</p>
