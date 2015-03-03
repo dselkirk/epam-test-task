@@ -209,6 +209,11 @@ header a {
 /* Год */
 
 .books-list .book-year {
+	color: #5d5d5d;
+	font-size: 14px;
+	line-height: 1.45;
+	white-space: normal;
+
 	display: inline-block;
 	margin-right: 5px;
 }
@@ -283,7 +288,7 @@ header a {
 	}
 
 	.books-list .book-photo {
-		width: 125px;
+		width: 100px;
 	}
 }
 
@@ -308,7 +313,7 @@ header a {
 }
 
 .single-book.visible .overlay{
-	min-height: 100%;
+	min-height: 1000%;
 }
 
 .preview-large{
