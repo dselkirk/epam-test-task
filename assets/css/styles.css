@@ -266,6 +266,16 @@ header a {
 		margin-left: 0;
 	}
 
+	.books-list .book-title {
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.book-author,
+	.book-year {
+		font-size: 10px;
+	}
+
 	.books-list .book-photo {
 		width: 125px;
 	}
@@ -292,7 +302,7 @@ header a {
 }
 
 .single-book.visible .overlay{
-	height: 100%;
+	min-height: 100%;
 }
 
 .preview-large{
