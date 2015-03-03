@@ -237,7 +237,10 @@ header a {
 @media (max-width: 800px) {
 
 	.book {
-		min-width: 300px;
+		min-width: 50%;
+		width: 90%;
+		margin: 0;
+		padding: 10px;
 	}
 
 	.books-list {
@@ -247,24 +250,7 @@ header a {
 	.books-list .book-photo {
 		width: 125px;
 	}
-	
-	.books-list > li {	
-		width: 80%;
-	}
 }
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	.book {
-		min-width: 300px;
-	}
-
-	.books-list {
-		margin-left: 0;
-	}
-}
-
 
 /*---------------
   Страница книги
