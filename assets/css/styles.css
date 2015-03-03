@@ -289,6 +289,7 @@ header a {
 
 	.books-list .book-photo {
 		width: 100px;
+		padding: 10px 0;
 	}
 }
 
@@ -324,7 +325,6 @@ header a {
 	margin-left: -40%;
 	top: 50%;
 	margin-top: -275px;
-	margin-bottom: 200px;
 	pointer-events: none;
 
 	overflow-y: auto;
@@ -365,6 +365,7 @@ header a {
 .preview-large .book-author,
 .preview-large .book-year {
 	display: inline-block;
+	padding: 10px 0;
 }
 
 .preview-large .book-description {
