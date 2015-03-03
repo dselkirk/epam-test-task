@@ -319,7 +319,6 @@ header a {
 .preview-large{
 	box-sizing: border-box;
 	width: 80%;
-	height: 100%;
 	position: fixed;
 	left: 50%;
 	margin-left: -40%;
