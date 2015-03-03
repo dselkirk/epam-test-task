@@ -143,6 +143,9 @@ $(function () {
 		var page = $('.single-book'),
 			container = $('.preview-large');
 
+			// Перемещаемся в верх страницы
+			$('html, body').scrollTop( 0 );
+
 		// Находим нужную книгу из массива по index 
 		if(data.length){
 			data.forEach(function (item) {

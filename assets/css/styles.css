@@ -152,7 +152,7 @@ header a {
 /* Контейнер информации о книге */
 
 .books-list .book-info {
-	padding-left: 15px;
+	padding-left: 25px;
 	padding-top: 10%;
 	float: left;
 }
