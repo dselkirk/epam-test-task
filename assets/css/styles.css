@@ -92,7 +92,7 @@ header a {
 
 .books-list{
 	list-style:none;
-	margin-left:225px;
+	margin-left:100px;
 	max-width: 1500px;
 	text-align: center;
 	padding: 0;
@@ -137,14 +137,22 @@ header a {
 	pointer-events: none;
 }
 
+/* Контейнер информации о книге */
+
+.books-list .book-info {
+	padding-left: 10px;
+}
+
 /* Обложка книги */
 
-.books-list .book-photo{
+.books-list .book-photo {
 	display: block;
 	text-align: center;
 	box-shadow : 0 0 20px 8px #f3f3f3 inset;
 
-	width: 275px;
+	float: left;
+
+	width: 205px;
 	margin-bottom: 25px;
 	padding: 20px 0;
 	box-sizing: border-box;
@@ -152,24 +160,25 @@ header a {
 
 /* Название */
 
-.books-list .book-title{
+.books-list .book-title {
 	display: block;
 	font-size: 18px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow:ellipsis;
-	max-width: 200px;
-	margin:0;
+	max-width: 200px;	
+	margin: 10% 0 0 0;
 }
 
-.books-list .book-link{
+.books-list .book-link {
 	text-decoration: none;
 	color: #2B2E31;
 }
 
 /* Автор */
 
-.books-list .book-author{
+.books-list .book-author {
+	display: inline-block;
 	margin-top: 20px;
 
 	color: #5d5d5d;
@@ -185,14 +194,14 @@ header a {
 
 /* Год */
 
-.books-list .book-year{
+.books-list .book-year {
 	display: inline-block;
 	margin-right: 5px;
 }
 
 /* Подсветка */
 
-.books-list .highlight{
+.books-list .highlight {
 	position: absolute;
 	top:0;
 	left:0;
@@ -205,14 +214,14 @@ header a {
 	        transition: 0.4s;
 }
 
-.books-list > li:hover .highlight{
+.books-list > li:hover .highlight {
 	opacity: 1;
 	filter:alpha(opacity=100);
 }
 
 /* Список будет адаптивным */
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
 	.books-list .book-photo{
 		width: 225px;
@@ -228,11 +237,11 @@ header a {
   Страница книги
 -----------------*/
 
-.single-book{
+.single-book {
 	z-index: 100;
 }
 
-.overlay{
+.overlay {
 	height: 20px;
 	width: 100%;
 	position: fixed;
@@ -259,6 +268,8 @@ header a {
 	margin-top: -275px;
 	pointer-events: none;
 
+	overflow: auto;
+
 	border-radius: 6px;
 	background-color:  #ffffff;
 
@@ -277,20 +288,28 @@ header a {
 	pointer-events: auto;
 }
 
-.preview-large h3{
+.preview-large .book-header{
 	margin-top: 20px;
 }
 
-.preview-large img{
-	width: 100%;
+.preview-large .book-photo {
 	height: 280px;
 	border-bottom: 3px solid #efefef;
 	border-radius: 5px 5px 0 0;
 }
 
-.preview-large p{
+.preview-large .book-title {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.preview-large .book-author {
+	display: inline-block;
+}
+
+.preview-large div{
 	line-height: 23px;
-	padding: 50px 45px;
+	padding: 10px 45px;
 }
 
 .close{

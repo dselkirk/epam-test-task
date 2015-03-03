@@ -7,84 +7,73 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     "image": {
       "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "large": "assets/images/eloquent_js.png"
     }
   },
   {
     "id": 2,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "Smashing Book #4",
+    "author": "Harry Roberts",
+    "year": 2014,    
+    "description": "Written by well-respected designers and developers, the 4th Smashing Book contains lots of actionable takeaways that will help you in your daily routine. Think of it as a reliable playbook for issues that keep following you in every project. This book is for you because you’ll discover plenty of valuable, time-saving techniques that will improve your workflow right away.",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/web_design.png",
+      "large": "assets/images/Web_design.png"
     }
   },
   {
     "id": 3,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "Don't Make Me Think",
+    "author": "Steve Krug",
+    "year": 2012,    
+    "description": "Since Don’t Make Me Think was first published in 2000, hundreds of thousands of Web designers and developers have relied on usability guru Steve Krug’s guide to help them understand the principles of intuitive navigation and information design. Witty, commonsensical, and eminently practical, it’s one of the best-loved and most recommended books on the subject.",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/dont_think.jpg",
+      "large": "assets/images/dont_think.jpg"
     }
   },
   {
     "id": 4,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "Mobile First",
+    "author": "Luke Wroblewski",
+    "year": 2011,    
+    "description": "Our industry's long wait for the complete, strategic guide to mobile web design is finally over. Former Yahoo! design architect and co-creator of Bagcheck Luke Wroblewski knows more about mobile experience than the rest of us, and packs all he knows into this entertaining, to-the-point guidebook. Its data-driven strategies and battle tested techniques will make you a master of mobile-and improve your non-mobile design, too!",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/mobile_first.jpg",
+      "large": "assets/images/mobile_first.jpg"
     }
   },
   {
     "id": 5,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "The Zen of CSS Design",
+    "author": "Dave Shea",
+    "year": 2005,    
+    "description": "Proving once and for all that standards-compliant design does not equal dull design, this inspiring tome uses examples from the landmark CSS Zen Garden site as the foundation for discussions on how to create beautiful, progressive CSS-based Web sites. By using the Zen Garden sites as examples of how CSS design techniques and approaches can be applied to specific Web challenges, authors Dave Shea and Molly Holzschlag provide an eye-opening look at the range of design methods made possible by CSS (Cascading Style Sheets). By the time you've finished perusing the volume, you'll have a new understanding of the graphically rich, fully accessible sites that CSS design facilitates. In sections on design, layout, imagery, typography, effects, and themes, Dave and Molly take you through every phase of the design process--from striking a sensible balance between text and graphics to creating eye-popping special effects (no scripting required).",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/zen_css.jpg",
+      "large": "assets/images/zen_css.png"
     }
   },
   {
     "id": 6,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "Web Design in a Nutshell",
+    "author": "Jennifer Niederst",
+    "year": 2006,    
+    "description": "Are you still designing web sites like it's 1999? If so, you're in for a surprise. Since the last edition of this book appeared five years ago, there has been a major climate change with regard to web standards. Designers are no longer using (X)HTML as a design tool, but as a means of defining the meaning and structure of content. Cascading Style Sheets are no longer just something interesting to tinker with, but rather a reliable method for handling all matters of presentation, from fonts and colors to the layout of the entire page. In fact, following the standards is now a mandate of professional web design. Our popular reference, Web Design in a Nutshell, is one of the first books to capture this new web landscape with an edition that's been completely rewritten and expanded to reflect the state of the art. In addition to being an authoritative reference for (X)HTML and Cascading Style Sheets, this book also provides an overview of the unique requirements of designing for the Web and gets to the nitty-gritty of JavaScript and DOM Scripting, web graphics optimization, and multimedia production. It is an indispensable tool for web designers and developers of all levels.",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/webdesign_nutshell.jpg",
+      "large": "assets/images/webdesign_nutshell.jpg"
     }
   },
   {
     "id": 7,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "title": "Object-Oriented JavaScript",
+    "author": "Stoyan Stefanov",
+    "year": 2008,    
+    "description": "Create scalable and reusable high-quality JavaScript applications and libraries using the concepts of object-oriented programming. This book is for the beginning to intermediate web developer who wants to solve web development problems with smart JavaScript. It does not assume any prior knowledge of JavaScript programming; however even if you already know some JavaScript, there will be plenty for you to learn here.",
     "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
+      "small": "assets/images/oo_js.jpg",
+      "large": "assets/images/oo_js.jpg"
     }
-  },
-  {
-   "id": 8,
-    "title": "Eloquent JavaScript",
-    "author": "Marijn Haverbeke",
-    "year": 2013,    
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
-    "image": {
-      "small": "assets/images/eloquent_js.png",
-      "large": "assets/images/eloquent_js_large.png"
-    }
-  }
+  }  
 ]

@@ -26,10 +26,12 @@
 					{{#each this}}
 						<li data-index="{{id}}" class="book">
 							<a href="#" class="book-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
-							<h2 class="book-title"><a href="#" class="book-link"> {{title}} </a></h2>
-							<div class="book-author">{{author}},</div>
-							<div class="book-year">{{year}}</div>
-							<div class="highlight"></div>
+							<div class="book-info">
+								<h2 class="book-title"><a href="#" class="book-link"> {{title}} </a></h2>
+								<div class="book-author">{{author}},</div>
+								<div class="book-year">{{year}}</div>
+								<div class="highlight"></div>
+							</div>
 						</li>
 					{{/each}}
 				</script>
@@ -43,12 +45,14 @@
 			<div class="overlay"></div>
 
 			<div class="preview-large">
-				<h3>Книга</h3>
+				<h3 class="book-header">{{title}}</h3>
 				<img src="" class="book-photo"/>
-				<p class="book-title">{{title}}</p>
-				<p class="book-author">{{author}}</p>
-				<p class="book-year">{{year}}</p>
-				<p class="book-description">{{description}}</p>
+				<div class="book-info">
+					<div class="book-title">{{title}}</div>
+					<div class="book-author">{{author}},</div>
+					<div class="book-year">{{year}}</div>
+					<div class="book-description">{{description}}</div>
+				</div>
 				<span class="close">×</span>
 			</div>
 
