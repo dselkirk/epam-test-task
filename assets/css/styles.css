@@ -152,7 +152,7 @@ header a {
 /* Контейнер информации о книге */
 
 .books-list .book-info {
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-top: 10%;
 	float: left;
 }
@@ -241,12 +241,12 @@ header a {
 /* Список будет адаптивным */
 
 @media (max-width: 800px) {
-
 	.book {
 		min-width: 50%;
-		width: 90%;
+		max-width: 100%;
+		width: 100%;
 		margin: 0;
-		padding: 10px;
+		padding: 3px;
 	}
 
 	.books-list {
@@ -263,18 +263,14 @@ header a {
 	.book {
 		min-width: 50%;
 		max-width: 100%;
-		width: 90%;
+		width: 100%;
 		margin: 0;
-		padding: 10px;
+		padding: 3px;
 	}
 
 	.books-list {
 		margin-left: 0;
 	}
-
-    .books-list .book-photo {
-    	margin-bottom: 0
-    }
 
 	.books-list .book-title {
 		font-size: 11px;
@@ -290,6 +286,7 @@ header a {
 	.books-list .book-photo {
 		width: 100px;
 		padding: 10px 0;
+		margin-bottom: 0;
 	}
 }
 
