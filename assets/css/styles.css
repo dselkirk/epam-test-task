@@ -5,6 +5,7 @@
 
 body{
 	font: normal 16px Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: none;
 }
 
 h1, h3{
@@ -252,6 +253,24 @@ header a {
 	}
 }
 
+@media only screen and (max-device-width: 480px) {
+	.book {
+		min-width: 50%;
+		max-width: 100%;
+		width: 90%;
+		margin: 0;
+		padding: 10px;
+	}
+
+	.books-list {
+		margin-left: 0;
+	}
+
+	.books-list .book-photo {
+		width: 125px;
+	}
+}
+
 /*---------------
   Страница книги
 -----------------*/
@@ -339,7 +358,7 @@ header a {
 .close{
 	position: absolute;
 	right: 5px;
-	top: 5px;
+	top: 25px;
 
 	font-size: 28px;
 	color: #555;
