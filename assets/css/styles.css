@@ -141,6 +141,7 @@ header a {
 
 .books-list .book-info {
 	padding-left: 10px;
+	padding-top: 10%;
 	float: left;
 }
 
@@ -314,7 +315,7 @@ header a {
 
 .preview-large div {
 	line-height: 23px;
-	padding: 10px 45px;
+	padding: 10px 5px;
 }
 
 .close{
