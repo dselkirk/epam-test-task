@@ -141,6 +141,7 @@ header a {
 
 .books-list .book-info {
 	padding-left: 10px;
+	float: left;
 }
 
 /* Обложка книги */
@@ -259,7 +260,7 @@ header a {
 
 .preview-large{
 	box-sizing: border-box;
-	width: 760px;
+	width: 640px;
 	height: 550px;
 	position: fixed;
 	left: 50%;
@@ -299,15 +300,19 @@ header a {
 }
 
 .preview-large .book-title {
-	display: inline-block;
 	font-size: 18px;
 }
 
-.preview-large .book-author {
+.preview-large .book-author,
+.preview-large .book-year {
 	display: inline-block;
 }
 
-.preview-large div{
+.preview-large .book-description {
+	border-top: 1px solid #e3e3e3;
+}
+
+.preview-large div {
 	line-height: 23px;
 	padding: 10px 45px;
 }

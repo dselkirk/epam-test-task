@@ -148,6 +148,7 @@ $(function () {
 			data.forEach(function (item) {
 				if(item.id == index){
 					// Заполняем '.preview-large' данными.
+					container.find('.book-header').text(item.title);
 					container.find('.book-title').text(item.title);
 					container.find('.book-photo').attr('src', item.image.large);
 					container.find('.book-author').text(item.author);
