@@ -319,12 +319,13 @@ header a {
 .preview-large{
 	box-sizing: border-box;
 	width: 80%;
-	height: 550px;
+	height: 100%;
 	position: fixed;
 	left: 50%;
 	margin-left: -40%;
 	top: 50%;
 	margin-top: -275px;
+	margin-bottom: 200px;
 	pointer-events: none;
 
 	overflow-y: auto;
@@ -378,7 +379,7 @@ header a {
 
 .close{
 	position: absolute;
-	right: 5px;
+	right: 15px;
 	top: 25px;
 
 	font-size: 28px;
