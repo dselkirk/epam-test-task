@@ -35,6 +35,10 @@ header a {
 	text-decoration: none;
 }
 
+.header-title {
+	text-align: center;
+}
+
 @media (max-width: 500px){
 
 	header {
@@ -133,7 +137,7 @@ header a {
 	pointer-events: none;
 }
 
-/* The book image */
+/* Обложка книги */
 
 .books-list .book-photo{
 	display: block;
@@ -146,9 +150,9 @@ header a {
 	box-sizing: border-box;
 }
 
-/* The book name */
+/* Название */
 
-.books-list h2{
+.books-list .book-title{
 	display: block;
 	font-size: 18px;
 	white-space: nowrap;
@@ -158,14 +162,14 @@ header a {
 	margin:0;
 }
 
-.books-list h2 a{
+.books-list .book-link{
 	text-decoration: none;
 	color: #2B2E31;
 }
 
-/* book description */
+/* Автор */
 
-.books-list .book-description{
+.books-list .book-author{
 	margin-top: 20px;
 
 	color: #5d5d5d;
@@ -179,17 +183,11 @@ header a {
 	list-style: none;
 }
 
-.books-list .book-description li{
+/* Год */
+
+.books-list .book-year{
 	display: inline-block;
 	margin-right: 5px;
-}
-
-.books-list .book-description li:first-child{
-	display: block;
-}
-
-.books-list .book-description li span{
-	font-weight: bold;
 }
 
 /* Подсветка */

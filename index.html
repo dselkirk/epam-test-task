@@ -14,7 +14,7 @@
 <body>
 
 	<header class="compact">
-		<h1><a href="#">Моя библиотека</a></h1>
+		<h1 class="header-title"><a href="#">Моя библиотека</a></h1>
 	</header>
 
 	<div class="main-content">
@@ -26,9 +26,9 @@
 					{{#each this}}
 						<li data-index="{{id}}" class="book">
 							<a href="#" class="book-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
-							<h2><a href="#" class="book-title"> {{title}} </a></h2>
-							<p class="book-author">{{author}}</p>
-							<p class="book-year">{{year}}</p>
+							<h2 class="book-title"><a href="#" class="book-link"> {{title}} </a></h2>
+							<div class="book-author">{{author}},</div>
+							<div class="book-year">{{year}}</div>
 							<div class="highlight"></div>
 						</li>
 					{{/each}}
