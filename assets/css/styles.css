@@ -230,7 +230,7 @@ header a {
 	.books-list {
 		margin-left: 0;
 	}
-	
+
 	.books-list .book-photo{
 		width: 225px;
 	}
@@ -267,11 +267,11 @@ header a {
 
 .preview-large{
 	box-sizing: border-box;
-	width: 640px;
+	width: 80%;
 	height: 550px;
 	position: fixed;
 	left: 50%;
-	margin-left: -375px;
+	margin-left: -40%;
 	top: 50%;
 	margin-top: -275px;
 	pointer-events: none;
