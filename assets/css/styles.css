@@ -260,10 +260,14 @@ header a {
 
 /* Медиа-запросы для iphone 4 и меньше*/
 @media only screen and (max-device-width: 480px) {
+	.main-content{		
+		padding: 5px;
+	}
+
 	.book {
 		min-width: 50%;
 		max-width: 100%;
-		width: 100%;
+		width: 95%;
 		margin: 0;
 		padding: 3px;
 	}
@@ -280,7 +284,7 @@ header a {
 
 	.book-author,
 	.book-year {
-		font-size: 10px;
+		font-size: 8px;
 	}
 
 	.books-list .book-photo {
