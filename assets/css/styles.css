@@ -64,6 +64,9 @@ header a {
 	text-align: center;
 	margin: 125px auto 60px;
 	padding: 0 40px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .main-content h3{
@@ -101,6 +104,9 @@ header a {
 	opacity: 0;
 	filter:alpha(opacity=0);
 	font-size: 0;
+
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .all-books.visible .books-list,
@@ -133,6 +139,7 @@ header a {
 	padding: 25px;
 
 	min-width: 500px;
+	width: 40%;
 }
 
 .books-list > li.hidden{
@@ -240,6 +247,10 @@ header a {
 	.books-list .book-description{
 		max-width: 225px;
 	}
+
+	.books-list > li{	
+		width: 80%;
+	}
 }
 
 
@@ -278,7 +289,8 @@ header a {
 	margin-top: -275px;
 	pointer-events: none;
 
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 
 	border-radius: 6px;
 	background-color:  #ffffff;
