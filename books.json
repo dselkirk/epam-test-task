@@ -51,7 +51,7 @@
     "description": "Proving once and for all that standards-compliant design does not equal dull design, this inspiring tome uses examples from the landmark CSS Zen Garden site as the foundation for discussions on how to create beautiful, progressive CSS-based Web sites. By using the Zen Garden sites as examples of how CSS design techniques and approaches can be applied to specific Web challenges, authors Dave Shea and Molly Holzschlag provide an eye-opening look at the range of design methods made possible by CSS (Cascading Style Sheets). By the time you've finished perusing the volume, you'll have a new understanding of the graphically rich, fully accessible sites that CSS design facilitates. In sections on design, layout, imagery, typography, effects, and themes, Dave and Molly take you through every phase of the design process--from striking a sensible balance between text and graphics to creating eye-popping special effects (no scripting required).",
     "image": {
       "small": "assets/images/zen_css.jpg",
-      "large": "assets/images/zen_css.png"
+      "large": "assets/images/zen_css.jpg"
     }
   },
   {

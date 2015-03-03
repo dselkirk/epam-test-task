@@ -129,6 +129,8 @@ header a {
 
 	margin: 0 12px 14px 0;
 	padding: 25px;
+
+	min-width: 500px;
 }
 
 .books-list > li.hidden{
@@ -225,6 +227,10 @@ header a {
 
 @media (max-width: 800px) {
 
+	.books-list {
+		margin-left: 0;
+	}
+	
 	.books-list .book-photo{
 		width: 225px;
 	}
