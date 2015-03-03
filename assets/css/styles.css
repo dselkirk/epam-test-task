@@ -12,7 +12,7 @@ h1, h3{
 }
 
 /*-----------------
-	The Header
+	Шапка страницы
 ------------------*/
 
 header {
@@ -68,7 +68,7 @@ header h2.tzine a{
 }
 
 /*-----------------
-	Main Content
+	Основной контент
 ------------------*/
 
 
@@ -96,10 +96,10 @@ header h2.tzine a{
 
 
 /*-------------------
-	All Books Page
+	Страница всех книг
 --------------------*/
 
-/*	Books List	*/
+/*	Список книг	*/
 
 .all-books h3{
 	opacity: 0;
@@ -206,7 +206,7 @@ header h2.tzine a{
 	font-weight: bold;
 }
 
-/* Price and order button */
+/* Подсветка */
 
 .books-list .highlight{
 	position: absolute;
@@ -223,7 +223,7 @@ header h2.tzine a{
 	opacity: 1;
 }
 
-/* Making the list responsive */
+/* Список будет адаптивным */
 
 @media (max-width: 800px){
 
@@ -238,7 +238,7 @@ header h2.tzine a{
 
 
 /*---------------------------
-	Single book Page
+	Страница книги
 ----------------------------*/
 
 .single-book{
@@ -314,7 +314,7 @@ header h2.tzine a{
 
 
 /*---------------------------
-	Error Page
+	Страница ошибок
 ----------------------------*/
 
 .error{

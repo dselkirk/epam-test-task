@@ -1,13 +1,12 @@
 $(function () {
 
-	// Globals variables
+	// Глобальные переменные
 
-		// 	An array containing objects with information about the books.
+		// 	Массив книг
 	var books = [];
 
 
-
-	// Single book page buttons
+	// Кнопки на странице конкретной книги
 
 	var singlebookPage = $('.single-book');
 
@@ -17,23 +16,19 @@ $(function () {
 
 			var clicked = $(e.target);
 
-			// If the close button or the background are clicked go to the previous page.
+			// На прошлую страницу возвращаемся, если были книги по кнопкам
 			if (clicked.hasClass('close') || clicked.hasClass('overlay')) {
-				// Change the url hash with the last used filters.
-				createQueryHash();
+				window.location.hash = '#';
 			}
-
 		}
-
 	});
 
+	// Вызывается при рендеринге страницы
 
-	// These are called on page load
-
-	// Get data about our books from books.json.
+	// Получаем данные из books.json.
 	//$.getJSON( "books.json", function( data ) {
 
-		// Write the data into our global variable.
+		// Записываем в переменную
 		//books = data;
 
 			books = [
@@ -126,83 +121,74 @@ $(function () {
     }
   }
 ]
-
-		// Call a function to create HTML for all the books.
+		// Вызываем метод для генерации всех книг
 		generateAllbooksHTML(books);
 
-		// Manually trigger a hashchange to start the app.
+		// Вручную вызываем событие hashchange, чтобы начать приложение
 		$(window).trigger('hashchange');
 	//});
 
 
-	// An event handler with calls the render function on every hashchange.
-	// The render function will show the appropriate content of out page.
+	// При каждом изменении hashm вызываем данный метод
 	$(window).on('hashchange', function(){
 		render(window.location.hash);
 	});
 
 
-	// Navigation
+	// Навигация
 
 	function render(url) {
 
-		// Get the keyword from the url.
+		// Получаем keyword из url
 		var temp = url.split('/')[0];
 
-		// Hide whatever page is currently shown.
+		// Скрываем все
 		$('.main-content .page').removeClass('visible');
 
 
 		var	map = {
 
-			// The "Homepage".
+			// Домашняя страница
 			'': function() {
-
-				// Clear the filters object, uncheck all checkboxes, show all the books
-				filters = {};
-				checkboxes.prop('checked',false);
-
 				renderbooksPage(books);
 			},
 
-			// Single books page.
+			// Страница книги
 			'#book': function() {
 
-				// Get the index of which book we want to show and call the appropriate function.
+				// Получаем индекс книги
 				var index = url.split('#book/')[1].trim();
 
 				renderSinglebookPage(index, books);
 			},
 		};
 
-		// Execute the needed function depending on the url keyword (stored in temp).
+		// Выполняем функцию из temp
 		if(map[temp]){
 			map[temp]();
 		}
-		// If the keyword isn't listed in the above - render the error page.
+		// Если роутинг неизвестен - выводим страницу ошибки
 		else {
 			renderErrorPage();
 		}
-
 	}
 
-
-	// This function is called only once - on page load.
-	// It fills up the books list via a handlebars template.
-	// It recieves one parameter - the data we took from books.json.
+	// Функция вызывается только раз - при старте страницы.
+	// Она заполняет книгами страницу. Данные получаются из books.json.
 	function generateAllbooksHTML(data){
 
 		var list = $('.all-books .books-list');
 
 		var theTemplateScript = $("#books-template").html();
-		//Compile the template​
+
+		// Компилируем шаблон
 		var theTemplate = Handlebars.compile (theTemplateScript);
 		list.append (theTemplate(data));
 
 
-		// Each books has a data-index attribute.
-		// On click change the url hash to open up a preview for this book only.
-		// Remember: every hashchange triggers the render function.
+		// Каждая книга имеет data-index аттрибут.
+		// При клике изменяем url, чтобы открыть превью конкретной книги
+		// NB: каждый hashchange вызывает функцию render.
 		list.find('li').on('click', function (e) {
 			e.preventDefault();
 
@@ -212,17 +198,17 @@ $(function () {
 		})
 	}
 
-	// This function receives an object containing all the book we want to show.
+	// Эта функция получает объект, содержащий все книги, что мы хотим показать
 	function renderbooksPage(data){
 
 		var page = $('.all-books'),
 			allbooks = $('.all-books .books-list > li');
 
-		// Hide all the books in the books list.
+		// Скрываем все книги
 		allbooks.addClass('hidden');
 
-		// Iterate over all of the books.
-		// If their ID is somewhere in the data object remove the hidden class to reveal them.
+		// Проходимся по всем книгам
+		// Если их id совпадает, то показываем
 		allbooks.each(function () {
 
 			var that = $(this);
@@ -234,49 +220,43 @@ $(function () {
 			});
 		});
 
-		// Show the page itself.
-		// (the render function hides all pages so we need to show the one we want).
+		// Показываем саму страницу
+		// (render функция скрывает все, поэтому мы должны выбирать, что показать).
 		page.addClass('visible');
 
 	}
 
 
-	// Opens up a preview for one of the books.
-	// Its parameters are an index from the hash and the books object.
+	// Открывает превью для конкретной книги
+	// Принимает в качестве параметра index из hash и сам объект книг
 	function renderSinglebookPage(index, data){
 
 		var page = $('.single-book'),
 			container = $('.preview-large');
 
-		// Find the wanted book by iterating the data object and searching for the chosen index.
+		// Находим нужную книгу из массива по index 
 		if(data.length){
 			data.forEach(function (item) {
 				if(item.id == index){
-					// Populate '.preview-large' with the chosen book's data.
-					container.find('h3').text(item.name);
-					container.find('img').attr('src', item.image.large);
-					container.find('p').text(item.description);
+					// Заполняем '.preview-large' данными.
+					container.find('.book-title').text(item.title);
+					container.find('.book-photo').attr('src', item.image.large);
+					container.find('.book-author').text(item.author);
+					container.find('.book-year').text(item.year);
+					container.find('.book-description').text(item.description);
 				}
 			});
 		}
 
-		// Show the page.
+		// Показываем страницу
 		page.addClass('visible');
 
 	}
 
 
-	// Shows the error page.
+	// Покзываем страницу ошибок
 	function renderErrorPage(){
 		var page = $('.error');
 		page.addClass('visible');
-	}
-
-	// Get the filters object, turn it into a string and write it into the hash.
-	function createQueryHash(){
-		window.location.hash = '#';
-	}
-
-
-
+	}	
 });
