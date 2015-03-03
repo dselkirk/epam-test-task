@@ -239,17 +239,29 @@ header a {
 	.book {
 		min-width: 300px;
 	}
-	
+
 	.books-list {
 		margin-left: 0;
 	}
 
-	.books-list .book-photo{
+	.books-list .book-photo {
 		width: 125px;
 	}
 	
-	.books-list > li{	
+	.books-list > li {	
 		width: 80%;
+	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.book {
+		min-width: 300px;
+	}
+
+	.books-list {
+		margin-left: 0;
 	}
 }
 
